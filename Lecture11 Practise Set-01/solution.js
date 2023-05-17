@@ -24,11 +24,11 @@ if(challenge.startsWith('JavaScript')){
 }
 
 // Sol-6
-const a = '10';
-const b = 10;
+console.log(0.1 + 0.2); // 0.30000000000000004
+console.log(0.1 + 0.2 == 0.3);  // false
 
-const result = a === parseInt(b) ? true : false;
-console.log(result);
+// Explanation: You can’t be sure. it might print out 0.3 and true, or it might not. Numbers in JavaScript are all treated with floating point precision, and as such, may not always yield the expected results.
+
 
 // Sol-7
 function randomString(){
@@ -44,6 +44,14 @@ function randomString(){
 console.log(randomString());
 
 // Sol-8
+// const age = prompt('Enter your age:');
+
+// if(age >= 18){
+//     console.log('You are old enough to drive')
+// }else{
+//     let yearLeft = 18 - age;
+//     console.log(`You are left with ${yearLeft} years to drive.`);
+// }
 
 
 // Sol-9
@@ -90,3 +98,29 @@ function assignGrade(score){
     return grade;
 }
 console.log(assignGrade(99));
+
+// Sol-11
+
+console.log( 10 < 20 < 30 );    // (10 < 20) --> true (1) --> (1 < 30) => Output true
+console.log( 30 > 20 > 10 );    // (30 > 20) --> true (1) --> (1 > 10) => Output false
+
+// Sol-12
+
+const itCompaniesArray = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
+console.log(itCompaniesArray[0]);    // first company
+console.log(itCompaniesArray[Math.floor(itCompaniesArray.length / 2)]);    // Middle company
+console.log(itCompaniesArray[itCompaniesArray.length - 1]);    // last company
+
+// Sol-13
+
+function moreThanZerosComapanies(arr){
+    let newCompaniesArr = [];
+    for(let company of itCompaniesArray){
+        if(company.includes("oo")){
+            newCompaniesArr.push(company);
+        }
+    }
+    return newCompaniesArr;
+}
+console.log(moreThanZerosComapanies(itCompaniesArray));
