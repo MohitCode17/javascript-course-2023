@@ -123,16 +123,12 @@ Data type refers to the type of data that a JavaScript variable can hold. There 
 
 👉 PRIMITIVE TYPE
 
-A primitive is a value without any properties/methods attached to it. It's basically the simplest form of data in JavaScript.
+A primitive is a value without any properties/methods attached to it. It's basically the simplest form of data in JavaScript. There are 7 types of primitive data type in JavaScript.
 
 ➡️ String: A string is a sequence of textual characters. It can contain alphanumeric characters, symbols, spaces, newlines, emoticons, characters from other languages etc.
 A string can be denoted using a pair of single quotes (''), or a pair of double quotes ("").
 
 "I am string", 'I am string'.
-
-Each character in a string sits at a given position, formally known as its index. Indexes begin at 0. This means that the first character is at index 0, the second one is at 1 and so on and so forth.
-
-The total number of characters in a string is referred to as its length.
 
 
 ➡️ Numbers: In programming, generally numbers are categorised into two groups — integers and floats.
@@ -148,6 +144,12 @@ A float is a number with a decimal point.   (2.3, 8.77)
 
 
 ➡️ Null: Intentionally absence of value.
+
+
+➡️ BigInt: Used to store big integer values that are too big to be represented by a normal JavaScript Number
+
+
+➡️ Symbol: The JavaScript ES6 introduced a new primitive data type called Symbol . Symbols are immutable (cannot be changed) and are unique.
 */
 
 const firstName = "mohit";
@@ -161,4 +163,23 @@ favGame = "Cricket"
 let favPlayer = null;   // good practise, when you don't want initialize any value, initialize with null.
 favPlayer = "Rohit Sharma"
 
-console.log(favPlayer);
+let bigInteger = BigInt(567);
+
+console.log(bigInteger);
+
+
+/*
+👉 NON-PRIMITIVE TYPE
+
+Non-primitive data types is the object. The JavaScript arrays and functions are also objects. For more check out this web developer course online.
+*/
+
+// ➡️ Object
+
+const student = {
+    name: 'rohan',
+    rollNo: 12,
+    class: 'XII',
+    school: 'Delhi Public School'
+}
+console.log(student);
