@@ -78,13 +78,65 @@
 // } while (i <= 5)    // condition do not match but still print 10;
 
 
+// 👉 FOR IN LOOP
+
+// It is a special type of loop, used when we want to iterates over the properties of an object or the elements of an array.
+
+const countries = ['India', 'Finland', 'Denmark', 'Norway', 'Iceland'];
+
+for(let country in countries){
+  // console.log(country); // this will return index of countries array 0,1,2...
+
+  // console.log(countries[country]);
+}
+
+const str = "I love JavaScript";
+for (const char in str) {
+  // console.log(str[char]);
+}
+
+const person = {
+  firstName: "mohit",
+  age:25,
+  course: "web development"
+};
+
+for (const key in person) {
+  // console.log(key);
+};
 
 
+// 👉 FOR OF LOOP
+
+// We use for of loop for arrays. It is very hand way to iterate through an array if we are not interested in the index of each element in the array. Object cannot be iterable by using for..of loop.
+
+const numbers = [1, 2, 3, 4, 5];
+
+for(let num of numbers){
+  // console.log(num * num);
+}
+
+let sum = 0;
+for(let num of numbers){
+  sum +=num;
+}
+console.log(sum);
 
 
-
+// for(let key of person){
+//   console.log(key); // object is not iterable
+// }
 
 /**
+
+
+
+
+
+
+
+
+
 
 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 CONDITIONAL EXPRESSION 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟
 
