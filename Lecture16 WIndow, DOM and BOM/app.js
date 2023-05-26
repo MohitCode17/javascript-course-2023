@@ -172,11 +172,54 @@ let width = window.innerWidth;
 
 // 👉 MANIPULATE ELEMENTS
 
-// const heading = document.querySelector('.heading');
-// heading.innerHTML = 'Web Dev is Awesome!';
-// heading.style.color = 'yellow';
-// heading.style.fontSize = '80px';
-// heading.classList.add('title');
-// heading.classList.remove('heading');
+const heading = document.querySelector('.heading');
+
+
+// 👉 ADD TEXT CONTENT TO HTML ELEMENTS
+
+// There are many ways to add content to HTML elements. Let see some of the methods.
+
+// ✋ textContent: Used to add text to and HTML elements.
+
+// heading.textContent = '<h1>WELCOME TO DOM MANIPULATION</h1>';    // Cannot add HTML element itself.
+// heading.textContent = 'WELCOME TO DOM MANIPULATION';
+
+
+// ✋ innerHTML: Used to add a text or HTML elements or elements as a child.
+
+// Most people get confused between textContent and innerHTML. textContent is meant to add text to an HTML element, however innerHTML can add a text or HTML element or elements as a child.
+
+// heading.innerHTML = '<h1>WELCOME TO DOM MANIPULATION</h1>';  // We can add HTML element itself with innerHTML.
+// heading.innerHTML = 'WELCOME TO DOM MANIPULATION';
+
+
+// 👉 ADD STYLE TO HTML ELEMENTS
+
+heading.style.color = 'yellow';
+heading.style.backgroundColor = 'green';
+heading.style.fontSize = '50px';
+heading.style.fontFamily = 'cursive';
+
+
+// 👉 ADD AND REMOVE CLASS TO HTML ELEMENT
+
+heading.classList.add('title');
+heading.classList.remove('heading');
 
 // The classList method is a good method to append additional class. It does not override the original class if a class exists rather it adds additional class for the element.
+
+
+// 👉 CREATE ELEMENTS USING JAVASCRIPT
+const paragraph = document.createElement('p');
+paragraph.innerHTML = 'This is JavaScript course create mohitcodes'
+paragraph.classList.add('text');
+
+// Append to html file
+const parent = document.querySelector('.parent');
+parent.appendChild(paragraph);
+
+// Append at specific position
+parent.insertAdjacentElement('beforebegin', paragraph);     // at top mid
+parent.insertAdjacentElement('afterbegin', paragraph);    // at top
+parent.insertAdjacentElement('beforeend', paragraph);   // at bottom
+parent.insertAdjacentElement('afterend', paragraph);   // at bottom mid
