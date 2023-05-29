@@ -1,14 +1,14 @@
 /*
 💯 PRACTISE SET 02 QUESTIONS
 
-Q.1 Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+Q.1 Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 600000 rupee from salary per year, 10000 rupee annual bonus, 150000 rupee from stock market per year.'
 
 Q.2 Write a program that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
 
 Q.3 If the length of the password is greater than 6 and password contain @ say, your password is secured otherwise not secured.
 
 Q.4 Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
-YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+YYYY-MM-DD HH:mm eg. 2020-01-02 07:05
 
 Q.4 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
 
@@ -43,6 +43,6 @@ Q.10 let students = [
 3. More than 60 marks and rollnumber greater than 15
 4. Sum of marks of all students
 5. Return only name of students who scored more than 60
-6. Return total marks of students with marks greater than 60, after 20 marks have been addded to those who scored less than 60.
+6. Return total marks of students with marks less than 60, after 20 marks have been addded to those who scored less than 60.
 
 */

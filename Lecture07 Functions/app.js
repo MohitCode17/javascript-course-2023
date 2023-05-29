@@ -6,10 +6,9 @@ Function makes code clean, easy to read, reusable and easy to test.
 */
 
 
-// 👉 FUNCTION DECLARATION
+// 👉 FUNCTION DECLARATION(ALSO KNOWN AS FUNCTION STATEMENT)
 
 // function sayMyName() {
-//     // Body of function
 //     console.log('Hello Mohit !');
 // }
 // sayMyName();   // calling a function or envoked a function
