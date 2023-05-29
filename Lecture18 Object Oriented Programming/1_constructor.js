@@ -1,4 +1,4 @@
-/* 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 OBJECT ORIENTED PROGRAMMIN 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 */
+/* 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 OBJECT ORIENTED PROGRAMMING 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 */
 
 /*
 👉 WHAT IS OOP?
