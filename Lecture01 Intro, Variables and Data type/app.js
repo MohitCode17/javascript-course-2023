@@ -77,7 +77,7 @@ To declare variables we use keywords like var, let and const. But after ES6 'var
 // age = 24;       // Throw Error: Asignment to constant variable.
 // console.log(age);
 
-// Constant is more strict than let and var, once we declare varialbe using it, we cannot redeclare or change value of it.
+// Constant is more strict than let and var, once we declare variable using it, we cannot redeclare or change value of it.
 
 // Priority should be: const > let > var(avoid using it).
 
@@ -171,7 +171,7 @@ console.log(bigInteger);
 /*
 👉 NON-PRIMITIVE TYPE
 
-Non-primitive data types is the object. The JavaScript arrays and functions are also objects. For more check out this web developer course online.
+Non-primitive data types is the object. The JavaScript arrays and functions are also objects.
 */
 
 // ➡️ Object
